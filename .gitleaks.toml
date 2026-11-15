@@ -1,0 +1,13 @@
+title = "SMS relay secret scanning"
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Documentation Bearer placeholder only"
+regexTarget = "match"
+regexes = ['''YOUR_CALLER_TOKEN''']
+
+[[allowlists]]
+description = "Deterministic isolated Android instrumentation token"
+regexTarget = "match"
+regexes = ['''rotated-test-secret-0123456789''']

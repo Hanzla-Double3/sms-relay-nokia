@@ -1,0 +1,4 @@
+{$RELAY_DOMAIN} {
+    request_body { max_size 524288 }
+    reverse_proxy gateway:8080
+}
